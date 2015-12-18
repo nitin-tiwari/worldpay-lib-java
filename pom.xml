@@ -46,6 +46,8 @@
         <developerConnection>${github.developerConnection}</developerConnection>
         <url>${github.url}</url>
         <tag>HEAD</tag>
+        
+        
     </scm>
 
     <dependencies>
