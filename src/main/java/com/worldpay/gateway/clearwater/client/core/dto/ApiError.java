@@ -255,6 +255,7 @@ public class ApiError implements Serializable {
          * @return {@link ApiError}
          */
         public ApiError build() {
+            
             if (this.httpStatusCode == null) {
                 this.httpStatusCode = INTERNAL_SERVER_ERROR;
             }
