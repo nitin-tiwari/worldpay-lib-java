@@ -19,7 +19,7 @@ import com.worldpay.gateway.clearwater.client.core.dto.ApiError;
 /**
  * This exception wraps a {@link ApiError}.
  */
-public class WorldpayException extends RuntimeException {
+public class WorldpayException extend RuntimeException {
 
     /**
      * Serial version id
