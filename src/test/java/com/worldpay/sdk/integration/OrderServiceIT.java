@@ -503,7 +503,7 @@ public class OrderServiceIT {
         cardRequest.setExpiryMonth(2);
         cardRequest.setExpiryYear(2018);
 
-        tokenRequest.setPaymentMethod(cardRequest);
+        tokenRequest.getCommonToken().setPaymentMethod(cardRequest);
 
         return getToken(tokenRequest);
     }
@@ -527,7 +527,7 @@ public class OrderServiceIT {
 
         alternatePaymentMethod.setApmFields(apmFields);
 
-        tokenRequest.setPaymentMethod(alternatePaymentMethod);
+        tokenRequest.getCommonToken().setPaymentMethod(alternatePaymentMethod);
         return getToken(tokenRequest);
     }
 
